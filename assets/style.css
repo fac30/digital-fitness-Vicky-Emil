@@ -1,50 +1,129 @@
-body {
-    font-family: 'Open Sans',sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-}
-html, body {
-    font-size: 100%;
-}
-body {
-    color: #fff;
-    background-color: #202020;;
-}
-
-.teamMembers{
-    display: grid;
-}
-
 /*------------------------
 Settings 
 ------------------------*/
 
+html {
+    font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  color: #202020;
+  background-color: #fff;
+}
+
+.center {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-sm {
+  max-width: 20rem;
+}
+
+.width-lg {
+  max-width: 60rem;
+}
+
+.stack-sm > * + * {
+  margin-top: 0.5rem;
+}
+
+.stack-md > * + * {
+  margin-top: 1rem;
+}
+
+.stack-lg > * + * {
+  margin-top: 2rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 4rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-xl {
+  gap: 4rem;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.column-lg {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+img {
+  display: inline-block;
+}
+
 /*------------------------
 Header 
 ------------------------*/
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem 0;
+  min-height: 3.5rem;
 }
 
+.container {
+  max-width: 72.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 5rem;
+  height: auto;
+  margin-left: 1rem;
+}
 
 /*------------------------
 Navigation 
 ------------------------*/
-ul {
-    display: flex;
-    list-style: none;
+
+.navlist {
+  list-style-type: none;
 }
 
-ul > li {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-}
-
-ul > li > a {
-    font-size: 20px;
-    text-decoration: none;
+.navlist li a {
+  line-height: 40px;
+  display: block;
+  font-weight: 400;
+  margin-right: 0.5rem;
+  color: #333;
+  text-decoration: none;
 }
 
 a:link, a:visited, a:active {
@@ -53,6 +132,12 @@ a:link, a:visited, a:active {
 
 a:hover {
     color: grey;
+}
+
+.main-page {
+  max-height: 80rem;
+  max-width: auto;
+  /* opacity: 70%; */
 }
 
 /*------------------------
@@ -64,6 +149,9 @@ About
 Team Members
 ------------------------*/
 
+.teamMembers{
+    display: grid;
+}
 
 /*------------------------
 Contact Form
@@ -78,3 +166,13 @@ Footer
 /*------------------------
 Media Queries
 ------------------------*/
+
+@media (min-width: 85em){
+  .site-header .navigation{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 3rem;
+    margin-top: 0;
+  }
+}
