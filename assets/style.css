@@ -1,0 +1,80 @@
+body {
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+html, body {
+    font-size: 100%;
+}
+body {
+    color: #fff;
+    background-color: #202020;;
+}
+
+.teamMembers{
+    display: grid;
+}
+
+/*------------------------
+Settings 
+------------------------*/
+
+/*------------------------
+Header 
+------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*------------------------
+Navigation 
+------------------------*/
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul > li {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+ul > li > a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: var(--black);
+}
+
+a:hover {
+    color: grey;
+}
+
+/*------------------------
+About
+------------------------*/
+
+
+/*------------------------
+Team Members
+------------------------*/
+
+
+/*------------------------
+Contact Form
+------------------------*/
+
+
+/*------------------------
+Footer
+------------------------*/ 
+
+
+/*------------------------
+Media Queries
+------------------------*/
