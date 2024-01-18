@@ -151,7 +151,33 @@ Team Members
 
 .teamMembers{
     display: grid;
+    background-color: black;
 }
+
+.card{
+  width: 360px;
+  border: 2px solid black;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.thumbnail{
+  width: 360px;
+  height: 360px;
+}
+
+.thumbnail_img{
+  width: 360px;
+  height: 360px;
+}
+
+.content_certification{
+  list-style: none;
+}
+
+/* on show more button we can use transition */
+
 
 /*------------------------
 Contact Form
