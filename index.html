@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="fitness, trainer, personal trainer, digital fitness">
+  <meta name="keywords" content="fitness, trainer, personal trainer, digital fitness, fac30a">
   <meta name="description" content="">
+  <link rel="icon" href="assets/imgs/logo1.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <title>Digital Fitness</title>
   <script src="https://kit.fontawesome.com/47f32613d1.js" crossorigin="anonymous"></script>
+  <script src="assets/index.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -27,10 +29,10 @@
             <a href="#about-us">About us</a>
           </li>
           <li>
-            <a href="team-members">Team Members</a>
+            <a href="#team-members">Team Members</a>
           </li>
           <li>
-            <a href="contact-us">Contact us</a>
+            <a href="#contact-us">Contact us</a>
           </li>
         </ul>
       </nav>
@@ -38,10 +40,116 @@
   </header>
   <main>
     <section id="home" class="main-page">
-      <img class="main-page" src="assets/imgs/websiteBacground.jpg" alt="An image of weight lift course">
-
+      <img class='main-page' src="assets/imgs/websiteBacground.jpg" alt="An image of weight lift course">
+      <h1>Your Digital Fitness</h1>
+      <p>Transforming Lives Through AI-driven Personalized Fitness</p>
+      <a href="#">Enquire Now</a>
     </section>
-    <section class="intro">
+
+    <section id="about-us" class="intro">
+      <h2>About Us</h2>
+      <div>
+        <div>
+          <h3>Empowering Your Fitness Journey</h3>
+          <p>
+            At Digital Fitness, we are dedicated to empowering individuals
+            through personalized fitness experiences.
+            Utilizing the latest advancements in Artificial Intelligence,
+            we've developed an AI-driven personal trainer designed to offer
+            24/7 guidance and support. Our technology is not just about providing
+            workout routines; it's about creating a fitness experience that adapts
+            to your individual needs.
+          </p>
+        </div>
+
+        <div>
+          <h3>Services Tailored for You</h3>
+          <p>
+            AI-Driven Personal Training:
+            Step into the world of personalized fitness with our AI-driven personal trainer.
+            Experience the future of fitness with technology that understands and adapts to your needs.
+
+            Round-the-Clock Guidance:
+            Our platform offers 24/7 guidance and support, ensuring you have the motivation and advice you need, whenever you need it.
+
+            Customized Plans:
+            Say goodbye to one-size-fits-all workout routines.
+            Our platform delivers customized workout plans and nutritional advice,
+            tailored to your personal goals, fitness level, and dietary preferences.
+          </p>
+        </div>
+
+        <div>
+          <h3>Why Choose Us</h3>
+          <p>
+            Constant Adaptation:
+            As you progress, so do our plans. Our AI technology continuously
+            adjusts your fitness regime, ensuring that your workout and nutrition
+            plans evolve with your progress.
+
+            Real-Time Feedback & Motivation:
+            Stay motivated with real-time feedback.
+            Our platform keeps you engaged and moving forward, providing encouragement
+            and adjustments as needed.
+
+            Fitness at Your Fingertips:
+            With mobile app integration, your fitness journey
+            is accessible anywhere, anytime. Whether you're at home, in the gym,
+            or on the go, your personalized fitness plan is always within reach.
+          </p>
+        </div>
+
+        <div>
+          <form id="caloriesForm">
+            <h3>Experience - Workout Calories Calculator</h3>
+            <div id="hidden-container">
+              <div id="input-container" class="grid">
+                <div class="calorie-input">
+                  <label for="exercises">Exercise</label>
+                  <input type="text" id="exercises" placeholder="e.g., running" required>
+                </div>
+
+                <div class="calorie-input">
+                  <label for="duration">Duration (min)</label>
+                  <input type="number" id="duration" placeholder="Enter minutes" required>
+                </div>
+
+                <div class="calorie-input">
+                  <label for="height">Height (cm)</label>
+                  <input type="number" id="height" placeholder="Enter your eight" required min="60" max="250">
+                </div>
+
+                <div class="calorie-input">
+                  <label for="weight">Weight (kg)</label>
+                  <input type="number" id="weight" placeholder="Enter your eight" required min="20" max="300">
+                </div>
+
+                <div class="calorie-input">
+                  <label for="age">Age</label>
+                  <input type="number" id="age" placeholder="Enter your age" required min="3" max="85">
+                </div>
+              </div>
+
+              <p id="warning" hidden>
+                The input you provided does not appear to be a valid exercise.
+                Please ensure you're entering a recognizable physical activity
+                (like 'running', 'swimming', or 'cycling'). Check your spelling and try again.
+              </p>
+              <button id="calorie-button" type="submit">Calculate Calories</button>
+            </div>
+
+            <div id="results" hidden>
+              <p id="caloriesResult"></p>
+              <img id="exerciseImage" src="" alt="Exercise Image" />
+              <button type="button" id="reset-button">Calculate again</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
     </section>
     <section class="teamMembers">
       <article class="card">
@@ -63,7 +171,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>British Boxing Board of Control (BBBofC) Trainer's License</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -108,7 +216,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>British Weight Lifting (BWL) - Level 2 Coaching Course</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -153,7 +261,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>CrossFit Weightlifting Trainer (CF-WL)</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -198,7 +306,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>International Sports Sciences Association (ISSA) - Certified Strength and Conditioning Specialist (CSCS)</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -247,7 +355,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>National Strength and Conditioning Association (NSCA) - Certified Strength and Conditioning Specialist (CSCS)</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -292,7 +400,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>International Sports Sciences Association (ISSA) - Certified Personal Trainer (CPT)</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -337,7 +445,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>National Strength and Conditioning Association (NSCA) - Certified Strength and Conditioning Specialist (CSCS)</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -378,7 +486,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>British Association of Sport and Exercise Sciences (BASES) - Certified Exercise Practitioner</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -419,7 +527,7 @@
               <i class="certificate_icon far fa-file-alt"></i>
               <span>American Council on Exercise (ACE) - Certified Personal Trainer (CPT)</span>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="content_about_me">
           <h4 class="about_me_approach">Unique Approach and Personalized Plans</h4>
@@ -450,7 +558,7 @@
 
         </form>
       </section>
-      <button class="choose">  
+      <button class="choose">
       </button>
     </section>
   </main>
