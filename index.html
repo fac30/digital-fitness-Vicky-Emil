@@ -553,10 +553,91 @@
     <section class="chooseATrainer">
       <!-- with the button either on this or on a blank page -->
       <button class="enquire_button">Enquire Now</button>
-      <section class="form_section">
-        <form action="GET">
+      <!-- function enquireShowForm(){
 
+      } -->
+      <section id="section_form" class="form_section">
+        <form action="" method="POST" class="form_body">
+          <div class="form_first_name">
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name" id="first_name" required />
+          </div>
+          <div class="form_last_name">
+            <label for="last_name">Lst Name: </label>
+            <input type="text" name="last_name" id="last_name" required  />
+          </div>
+          <div class="form_telephone">
+            <label for="email">Telephone: </label>
+            <input type="tel" name="telephone" id="telephone" required />
+          </div>
+          <div class="form_email">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form_help">
+            <!-- function hideLocationConsultationGender(){
+              const selectValueElement = document
+              if(value === "press_enquiries"){
+                Location : display - hidden;
+                Consultation : display - hidden;
+                Gender : display - hidden;
+                 : display - hidden;
+              }
+            } -->
+            <label for="help">How can we help?</label>
+            <select name="help" id="help" required>
+              <option value="">--Please choose an option--</option>
+              <option value="personal_training">Personal Training</option>
+              <option value="press_enquiries">Press Enquiries</option>
+            </select>
+          </div>
+
+          <div class="form_gender">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="">--Please choose an option--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="not_say">Prefer not to say</option>
+            </select>
+          </div>
+          <div class="form_select_trainer">
+            <label for="trainer-select">Select a trainer:</label>
+            <select name="trainers" id="trainer-select" required>
+              <option value="">--Please choose an option--</option>
+              <option value="trainer1">James Ward - Boxing</option>
+              <option value="trainer2">Henry Robinson - Bodyweight Trainer</option>
+              <option value="trainer3">Daniel Taylor - CrossFit</option>
+              <option value="trainer4">Oliver Harris - Strength Trainer</option>
+              <option value="trainer5">Emma Thompson - Cardiovascular Trainer</option>
+              <option value="trainer6">Benjamin Evans - Functional Fitness Trainer</option>
+              <option value="trainer7">Olivia Mitchell - Balance and Stability Trainer</option>
+              <option value="trainer8">Charlotte Reynolds - Flexibility Trainer</option>
+              <option value="trainer9">James Williams - (HIIT) Trainer</option>
+            </select>
+          </div>
+          <div class="form_location">
+            <label for="location">Choose a location</label>
+            <input type="radio" name="location" value="finsbury" id="finsbury"> "Finsbury" 
+            <!-- maybe wrap them in a div -->
+            <label for="location">Choose a location</label>
+            <input type="radio" name="location" value="online" id="online"> "Online"
+          </div>
+
+          <div class="consultation">
+            <label for="consultation">Book a free 30 minute consultation?</label>
+            <input type="radio" name="consultation" value="yes" id="yes">Yes, I am interested
+            <input type="radio" name="consultation" value="no" id="no">No, I am not interested
+            
+          </div>
+
+          
+          
+          <div class="form-example">
+            <input type="submit" value="Enquire!" />
+          </div>
         </form>
+        
       </section>
       <button class="choose">
       </button>

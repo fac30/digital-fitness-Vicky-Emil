@@ -194,13 +194,23 @@ Team Members
 .content_certification{
   list-style: none;
 }
-
+img{
+  box-sizing: ;
+}
 /* on show more button we can use transition */
 
 
 /*------------------------
 Contact Form
 ------------------------*/
+.form_section{
+  display: flex;
+}
+
+.form_section{
+  display: none;
+}
+
 
 
 /*------------------------
