@@ -1,5 +1,5 @@
 /*------------------------
-Settings 
+Settings
 ------------------------*/
 
 html {
@@ -18,6 +18,9 @@ body {
   text-rendering: optimizeLegibility;
   color: #202020;
   background-color: #fff;
+}
+
+main {
 }
 
 .center {
@@ -71,8 +74,11 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  max-width: 10rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .column-lg {
@@ -84,7 +90,7 @@ img {
 }
 
 /*------------------------
-Header 
+Header
 ------------------------*/
 
 .site-header {
@@ -92,8 +98,9 @@ Header
   top: 0;
   width: 100%;
   background-color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   min-height: 3.5rem;
+
 }
 
 .container {
@@ -104,13 +111,13 @@ Header
 
 .logo {
   display: inline-block;
-  width: 5rem;
+  width: 4rem;
   height: auto;
   margin-left: 1rem;
 }
 
 /*------------------------
-Navigation 
+Navigation
 ------------------------*/
 
 .navlist {
@@ -138,12 +145,24 @@ a:hover {
   max-height: 80rem;
   max-width: auto;
   /* opacity: 70%; */
+  /* background-image: url('imgs/websiteBacground.jpg'); */
+  color: #fff;
 }
 
 /*------------------------
 About
 ------------------------*/
+#caloriesForm {
+  border: thick double #788280;
+  grid-template-columns: auto;
+}
 
+
+.calorie-input {
+  display: flex;
+  flex-direction: column;
+
+}
 
 /*------------------------
 Team Members
@@ -186,7 +205,7 @@ Contact Form
 
 /*------------------------
 Footer
-------------------------*/ 
+------------------------*/
 
 
 /*------------------------
