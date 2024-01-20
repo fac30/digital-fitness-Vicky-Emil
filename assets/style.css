@@ -195,7 +195,7 @@ Team Members
   list-style: none;
 }
 img{
-  box-sizing: ;
+  box-sizing: border-box;
 }
 /* on show more button we can use transition */
 
@@ -204,19 +204,60 @@ img{
 Contact Form
 ------------------------*/
 .form_section{
-  display: flex;
-}
 
-.form_section{
-  display: none;
+  display: block;
 }
-
 
 
 /*------------------------
 Footer
 ------------------------*/
+.foot{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
+.paragraph_section{
+  margin: 20px auto;
+  font-weight: 700;
+}
+
+.list_section{
+  display: flex;
+  align-content: space-around;
+  
+}
+
+.footer_list{
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: space-between;
+  margin-bottom: 20px;
+  padding-left: 0px;  
+}
+
+.footer_list>li>i{
+  display: flex;
+  margin-right: 200px;
+ font-size: 22px;
+}
+
+
+
+.fa-brands.fa-twitter{
+  margin-left: 0px;
+}
+
+.fa-brands.fa-youtube{
+  margin-right: 0px;
+}
+
+.footer_list>li>i:hover{
+  color: #788280; 
+}
 
 /*------------------------
 Media Queries
