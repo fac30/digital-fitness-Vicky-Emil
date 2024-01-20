@@ -73,6 +73,8 @@ const enquireButton = Array.from(
 
 enquireButton[0].addEventListener("click", enquireShowForm);
 
+// =============================CONTACT FORM AREA===================================================
+
 function enquireShowForm() {
   var x = document.getElementById("section_form");
   if (x.style.display === "none") {
