@@ -6,6 +6,7 @@
   <meta name="keywords" content="fitness, trainer, personal trainer, digital fitness, fac30a">
   <meta name="description" content="">
   <link rel="icon" href="assets/imgs/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -617,18 +618,19 @@
             </select>
           </div>
           <div class="form_location">
-            <label for="location">Choose a location</label>
-            <input type="radio" name="location" value="finsbury" id="finsbury"> "Finsbury" 
-            <!-- maybe wrap them in a div -->
-            <label for="location">Choose a location</label>
-            <input type="radio" name="location" value="online" id="online"> "Online"
+            <div class="finsbury">
+              <label for="location">Choose a location</label>
+              <input type="radio" name="location" value="finsbury" id="finsbury">Finsbury
+            </div>
+            <div class="online">
+              <label for="location">Choose a location</label>
+              <input type="radio" name="location" value="online" id="online"> Online
+            </div>
           </div>
 
           <div class="consultation">
             <label for="consultation">Book a free 30 minute consultation?</label>
             <input type="radio" name="consultation" value="yes" id="yes">Yes, I am interested
-            <input type="radio" name="consultation" value="no" id="no">No, I am not interested
-            
           </div>
 
           
@@ -645,7 +647,7 @@
   </main>
   <footer class="foot">
     <section class="list_section">
-      <ul class="footer_list" list-style=none>
+      <ul class="footer_list" list-style=none>  <!-- //role="list" -->
         <li><i class="fa-brands fa-twitter"></i></li>
         <li><i class="fa-brands fa-instagram"></i></li>
         <li><i class="fa-solid fa-globe"></i></li>
