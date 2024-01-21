@@ -65,7 +65,144 @@ document.getElementById("reset-button").addEventListener("click", () => {
   document.getElementById("hidden-container").hidden = false;
 });
 
-// Contact Area Functions
+//=================TeamMembers functions==========//
+
+const ShowMoreBtn = document.getElementById("show_more");
+
+ShowMoreBtn.addEventListener("click", showMoreHandler);
+
+function showMoreHandler() {
+  const ToDisappearElement = document.getElementById("to_disappear");
+  if (ShowMoreBtn.textContent === "Show More") {
+    ToDisappearElement.style.display = "block";
+    ShowMoreBtn.textContent = "Show Less";
+  } else {
+    ToDisappearElement.style.display = "none";
+    ShowMoreBtn.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn2 = document.getElementById("show_more2");
+
+ShowMoreBtn2.addEventListener("click", showMoreHandler2);
+
+function showMoreHandler2() {
+  const ToDisappearElement2 = document.getElementById("to_disappear2");
+  if (ShowMoreBtn2.textContent === "Show More") {
+    ToDisappearElement2.style.display = "block";
+    ShowMoreBtn2.textContent = "Show Less";
+  } else {
+    ToDisappearElement2.style.display = "none";
+    ShowMoreBtn2.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn3 = document.getElementById("show_more3");
+
+ShowMoreBtn3.addEventListener("click", showMoreHandler3);
+
+function showMoreHandler3() {
+  const ToDisappearElement3 = document.getElementById("to_disappear3");
+  if (ShowMoreBtn3.textContent === "Show More") {
+    ToDisappearElement3.style.display = "block";
+    ShowMoreBtn3.textContent = "Show Less";
+  } else {
+    ToDisappearElement3.style.display = "none";
+    ShowMoreBtn3.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn4 = document.getElementById("show_more4");
+
+ShowMoreBtn4.addEventListener("click", showMoreHandler4);
+
+function showMoreHandler4() {
+  const ToDisappearElement4 = document.getElementById("to_disappear4");
+  if (ShowMoreBtn4.textContent === "Show More") {
+    ToDisappearElement4.style.display = "block";
+    ShowMoreBtn4.textContent = "Show Less";
+  } else {
+    ToDisappearElement4.style.display = "none";
+    ShowMoreBtn4.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn5 = document.getElementById("show_more5");
+
+ShowMoreBtn5.addEventListener("click", showMoreHandler5);
+
+function showMoreHandler5() {
+  const ToDisappearElement5 = document.getElementById("to_disappear5");
+  if (ShowMoreBtn5.textContent === "Show More") {
+    ToDisappearElement5.style.display = "block";
+    ShowMoreBtn5.textContent = "Show Less";
+  } else {
+    ToDisappearElement5.style.display = "none";
+    ShowMoreBtn5.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn6 = document.getElementById("show_more6");
+
+ShowMoreBtn6.addEventListener("click", showMoreHandler6);
+
+function showMoreHandler6() {
+  const ToDisappearElement6 = document.getElementById("to_disappear6");
+  if (ShowMoreBtn6.textContent === "Show More") {
+    ToDisappearElement6.style.display = "block";
+    ShowMoreBtn6.textContent = "Show Less";
+  } else {
+    ToDisappearElement6.style.display = "none";
+    ShowMoreBtn6.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn7 = document.getElementById("show_more7");
+
+ShowMoreBtn7.addEventListener("click", showMoreHandler7);
+
+function showMoreHandler7() {
+  const ToDisappearElement7 = document.getElementById("to_disappear7");
+  if (ShowMoreBtn7.textContent === "Show More") {
+    ToDisappearElement7.style.display = "block";
+    ShowMoreBtn7.textContent = "Show Less";
+  } else {
+    ToDisappearElement7.style.display = "none";
+    ShowMoreBtn7.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn8 = document.getElementById("show_more8");
+
+ShowMoreBtn8.addEventListener("click", showMoreHandler8);
+
+function showMoreHandler8() {
+  const ToDisappearElement8 = document.getElementById("to_disappear8");
+  if (ShowMoreBtn8.textContent === "Show More") {
+    ToDisappearElement8.style.display = "block";
+    ShowMoreBtn8.textContent = "Show Less";
+  } else {
+    ToDisappearElement8.style.display = "none";
+    ShowMoreBtn8.textContent = "Show More";
+  }
+}
+
+const ShowMoreBtn9 = document.getElementById("show_more9");
+
+ShowMoreBtn9.addEventListener("click", showMoreHandler9);
+
+function showMoreHandler9() {
+  const ToDisappearElement9 = document.getElementById("to_disappear9");
+  if (ShowMoreBtn9.textContent === "Show More") {
+    ToDisappearElement9.style.display = "block";
+    ShowMoreBtn9.textContent = "Show Less";
+  } else {
+    ToDisappearElement9.style.display = "none";
+    ShowMoreBtn9.textContent = "Show More";
+  }
+}
+
+// ======================Contact Area Functions ============
 
 const enquireButton = Array.from(
   document.getElementsByClassName("enquire_button")
