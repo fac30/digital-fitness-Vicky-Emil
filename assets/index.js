@@ -12,7 +12,7 @@ document
     const age = document.getElementById("age").value;
     const result = document.getElementById("caloriesResult");
     const imgDisplay = document.getElementById("exerciseImage");
-    const button = document.getElementById("calorie-button");
+
     console.log(exercise);
     console.log(duration);
     console.log(weight);
@@ -48,8 +48,8 @@ document
       const workout = data.exercises[0].name;
       console.log(calories);
       console.log(workout);
-      result.innerHTML = `According to your personal data, engaging in ${workout} for ${duration} minutes is estimated to burn approximately ${calories} calories. Keep up the good work!`;
-      imgDisplay.setAttribute("src", "assets/imgs/background2.jpg");
+      result.innerHTML = `According to your personal data, engaging in ${workout} for ${duration} minutes is estimated to burn approximately ${calories} calories. <br>Keep up the good work!`;
+      imgDisplay.setAttribute("src", "assets/imgs/about5.jpg");
       document.getElementById("results").hidden = false;
       document.getElementById("hidden-container").hidden = true;
       document.getElementById("warning").hidden = true;

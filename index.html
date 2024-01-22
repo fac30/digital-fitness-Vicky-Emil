@@ -10,18 +10,18 @@
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;800&display=swap" rel="stylesheet">
   <title>Digital Fitness</title>
   <script src="https://kit.fontawesome.com/47f32613d1.js" crossorigin="anonymous"></script>
   <script src="assets/index.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <div class="container row justify-space-between">
+    <div class="header-container row justify-space-between">
       <a class="logo" href="/">
         <img class="logo" src="assets/imgs/logo1.png" alt="Agency logo image">
       </a>
-      <nav class="navigation">
+      <nav>
         <ul class="navlist row">
           <li>
             <a href="#home">Home</a>
@@ -39,79 +39,104 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main class="stack-sm">
     <section id="home" class="main-page">
-      <div class="main_page_img">
-        <img class='main-page' src="assets/imgs/websiteBacground.jpg" alt="An image of weight lift course">
+      <div class="title-container stack-md">
+        <h1 class="center">Your Digital Fitness</h1>
+        <p class="center">AI-driven Personalized Fitness</p>
       </div>
-      <div class="more_h1">
-        <h1>Digital Fitness</h1>
-      </div>
-      <div class="more_p">
-        <p>Transforming Lives Through AI-driven Personalized Fitness</p>
-      </div>
-      <!-- <div>
-        <button ><a href="#">Enquire Now</a></button>
-      </div> -->
-     
     </section>
 
-    <section id="about-us" class="intro">
+    <section id="about-us">
       <h2>About Us</h2>
-      <div>
-        <div>
-          <h3>Empowering Your Fitness Journey</h3>
-          <p>
-            At Digital Fitness, we are dedicated to empowering individuals
-            through personalized fitness experiences.
-            Utilizing the latest advancements in Artificial Intelligence,
-            we've developed an AI-driven personal trainer designed to offer
-            24/7 guidance and support. Our technology is not just about providing
-            workout routines; it's about creating a fitness experience that adapts
-            to your individual needs.
-          </p>
+      <div class="about-content">
+        <div class="text-wrapper">
+          <img class="about-img" src="assets/imgs/about1.png" alt="Futuristic AI-driven personal trainer in a high-tech gym, symbolizing advanced, personalized fitness technology.">
+          <div class="text-content">
+            <div class="about-title">
+              <h3>Empowering Your Fitness Journey</h3>
+            </div>
+            <p>
+              At Digital Fitness, we are dedicated to empowering individuals
+              through personalized fitness experiences.
+            </p>
+            <p>
+              Utilizing the latest advancements in Artificial Intelligence,
+              we've developed an AI-driven personal trainer designed to offer
+              24/7 guidance and support.
+            </p>
+            <p>
+              Our technology is not just about providing
+              workout routines; it's about creating a fitness experience that adapts
+              to your individual needs.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h3>Services Tailored for You</h3>
-          <p>
-            AI-Driven Personal Training:
-            Step into the world of personalized fitness with our AI-driven personal trainer.
-            Experience the future of fitness with technology that understands and adapts to your needs.
-
-            Round-the-Clock Guidance:
-            Our platform offers 24/7 guidance and support, ensuring you have the motivation and advice you need, whenever you need it.
-
-            Customized Plans:
-            Say goodbye to one-size-fits-all workout routines.
-            Our platform delivers customized workout plans and nutritional advice,
-            tailored to your personal goals, fitness level, and dietary preferences.
-          </p>
+        <div class="text-wrapper-reverse">
+          <img class="about-img" src="assets/imgs/about2.png" alt="Futuristic AI personal trainer in a sophisticated gym setting, showcasing technology for personalized fitness and nutrition plans.">
+          <div class="text-content-reverse">
+            <div class="about-title">
+              <h3>Services Tailored for You</h3>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <h4>AI-Driven Personal Training:</h4>
+                  Step into the world of personalized fitness with our AI-driven personal trainer.
+                  Experience the future of fitness with technology that understands and adapts to your needs.
+                </li>
+                <li>
+                  <h4>Round-the-Clock Guidance:</h4>
+                  Our platform offers 24/7 guidance and support, ensuring you have the motivation and advice you need, whenever you need it.
+                </li>
+                <li>
+                  <h4>Customized Plans:</h4>
+                  Say goodbye to one-size-fits-all workout routines.
+                  Our platform delivers customized workout plans and nutritional advice,
+                  tailored to your personal goals, fitness level, and dietary preferences.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h3>Why Choose Us</h3>
-          <p>
-            Constant Adaptation:
-            As you progress, so do our plans. Our AI technology continuously
-            adjusts your fitness regime, ensuring that your workout and nutrition
-            plans evolve with your progress.
-
-            Real-Time Feedback & Motivation:
-            Stay motivated with real-time feedback.
-            Our platform keeps you engaged and moving forward, providing encouragement
-            and adjustments as needed.
-
-            Fitness at Your Fingertips:
-            With mobile app integration, your fitness journey
-            is accessible anywhere, anytime. Whether you're at home, in the gym,
-            or on the go, your personalized fitness plan is always within reach.
-          </p>
+        <div class="text-wrapper">
+          <img class="about-img" src="assets/imgs/about3.png" alt="Futuristic fitness scene with AI technology, interactive displays for real-time feedback, and mobile integration, in a dark, high-tech gym setting.">
+          <div class="text-content">
+            <div class="about-title">
+              <h3>Why Choose Us</h3>
+            </div>
+            <ul>
+              <li>
+                <h4>Constant Adaptation:</h4>
+                As you progress, so do our plans. Our AI technology continuously
+                adjusts your fitness regime, ensuring that your workout and nutrition
+                plans evolve with your progress.
+              </li>
+              <li>
+                <h4>Real-Time Feedback & Motivation:</h4>
+                Stay motivated with real-time feedback.
+                Our platform keeps you engaged and moving forward, providing encouragement
+                and adjustments as needed.
+              </li>
+              <li>
+                <h4>Fitness at Your Fingertips:</h4>
+                With mobile app integration, your fitness journey
+                is accessible anywhere, anytime. Whether you're at home, in the gym,
+                or on the go, your personalized fitness plan is always within reach.
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div>
+        <div class="from-wrapper">
+          <img class="about-img" src="assets/imgs/about4.png" alt="Modern digital exercise calorie calculator with a touchscreen interface">
           <form id="caloriesForm">
-            <h3>Experience - Workout Calories Calculator</h3>
+            <div class="about-title">
+              <h3>Experience - Workout Calories Calculator</h3>
+            </div>
+
             <div id="hidden-container">
               <div id="input-container" class="grid">
                 <div class="calorie-input">
@@ -158,7 +183,6 @@
         </div>
 
       </div>
-
 
     </section>
     <section class="teamMembers">
@@ -655,8 +679,8 @@
           <label for="textbox">Add your comments here</label>
           <textarea name="textarea" id="textbox" cols="30" rows="10"></textarea>
 
-          
-          
+
+
           <div class="form-example">
             <input type="submit" value="Enquire!" />
           </div>
