@@ -595,7 +595,11 @@
     </section>
     <section class="chooseATrainer">
       <!-- with the button either on this or on a blank page -->
-      <button class="enquire_button">Enquire Now</button>
+      <h2 class="join">Want to join us?</h2>
+      <div class="button_wrapper">
+        <button class="enquire_button">Enquire Now</button>
+      </div>
+      
       <!-- function enquireShowForm(){
 
       } -->
@@ -662,18 +666,18 @@
           <div class="form_location">
             <div class="finsbury">
               <label for="location">Choose a location</label>
-              <input type="radio" name="location" value="finsbury" id="finsbury">Finsbury
-            </div>
-            <div class="online">
-              <label for="location">Choose a location</label>
-              <input type="radio" name="location" value="online" id="online"> Online
-            </div>
-          </div>
-
+              <div>
+                <input type="radio" name="location" value="finsbury" id="finsbury">
+                <label for="finsbury">Finsbury</label>
+                <input type="radio" name="location" value="online" id="online">
+                <label for="online">Online</label>
+              </div>
           <div class="consultation">
             <label for="consultation">Book a free 30 minute consultation?</label>
-            <input type="radio" name="consultation" value="yes" id="yes">Yes, I am interested
+            <input type="checkbox" id="consultation" name="consultation" value="yes" id="yes">Yes, I am interested
           </div>
+          <label for="textbox">Add your comments here</label>
+          <textarea name="textarea" id="textbox" cols="30" rows="10"></textarea>
 
 
 
