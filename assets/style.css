@@ -7,7 +7,7 @@ html {
 }
 
 * {
-  
+
   margin: 0;
 }
 
@@ -69,7 +69,7 @@ General
   position: absolute;
   font-size: 45px;
   letter-spacing: 8px;
-  opacity: 0.5;  
+  opacity: 0.5;
   font-weight: 900;
 }
 
@@ -81,9 +81,9 @@ General
  }
 
 .main_page_img{
-  
+
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit:cover;
 }
 
@@ -316,14 +316,18 @@ About
 .from-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  gap: 20px;
+  gap: 10px;
   align-items: flex-start;
   margin: 1rem 2rem;
-  justify-content: space-around;
+  justify-content: center;
+  border: double #CACCCC ;
+}
+
+.from-wrapper img {
+  margin:2rem;
 }
 
 #caloriesForm {
-  border: thick double #788280;
   grid-template-columns: auto;
   padding: 2rem;
 }
@@ -331,12 +335,31 @@ About
 #caloriesForm .about-title {
   text-align: center;
   margin-left: 2rem;
+
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5rem 2rem 3rem;
+  align-items: center;
+}
+
+#exerciseImage {
+  height: 399px;
+  width: 600px;
 }
 
 #warning, #caloriesResult {
   letter-spacing: 0.2rem;
-  padding: 1rem;
   line-height: 1.5;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#keep-word {
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .calorie-input {
@@ -348,16 +371,7 @@ About
   margin: 1rem;
   background-color: aliceblue;
   border-radius: 8px;
-
 }
-
-#exerciseImage {
-  margin: 1rem;
-}
-
-/* #reset-button {
-  margin: 2rem;
-} */
 
 
 /*-------------------------------
@@ -561,7 +575,7 @@ Contact Form
 ------------------------*/
 .form_section{
   padding: 30px 60px;
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-items: center;
   display: none;
@@ -585,7 +599,7 @@ flex-direction: column;
 /* .form_location{
   display: flex;
   flex-direction: row;
- 
+
 } */
 /* .finsbury{
   display: flex;

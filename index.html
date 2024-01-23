@@ -21,6 +21,10 @@
       <a class="logo" href="/">
         <img class="logo" src="assets/imgs/logo1.png" alt="Agency logo image">
       </a>
+      <!-- Hamburger Icon for Mobile -->
+      <a href="" id="hanburger-btn">
+        <i>≡</i>
+      </a>
       <nav>
         <ul class="navlist row">
           <li>
@@ -133,11 +137,11 @@
         <div class="from-wrapper">
           <img class="about-img" src="assets/imgs/about4.png" alt="Modern digital exercise calorie calculator with a touchscreen interface">
           <form id="caloriesForm">
-            <div class="about-title">
-              <h3>Experience - Workout Calories Calculator</h3>
-            </div>
 
-            <div id="hidden-container">
+            <div id="hidden-container" >
+              <div class="about-title">
+                <h3>Experience - Workout Calories Calculator</h3>
+              </div>
               <div id="input-container" class="grid">
                 <div class="calorie-input">
                   <label for="exercises">Exercise</label>
@@ -174,9 +178,15 @@
             </div>
 
             <div id="results" hidden>
-              <p id="caloriesResult"></p>
-              <img id="exerciseImage" src="" alt="Exercise Image" />
-              <button type="button" id="reset-button">Calculate again</button>
+              <div class="results-container">
+                <div class="about-title">
+                  <h3>Experience - Workout Calories Calculator</h3>
+                </div>
+                <p id="caloriesResult">According to your personal data, engaging in ${workout} for ${duration} minutes is estimated to burn approximately ${calories} calories.</p>
+                <p id="keep-word">Keep up the good work!</p>
+                <img id="exerciseImage" src="assets/imgs/about5.jpg" alt="Exercise Image" />
+                <button type="button" id="reset-button">Calculate again</button>
+              </div>
             </div>
 
           </form>
@@ -192,7 +202,7 @@
     </section>
 
     <section id="team-members" class="teamMembers">
-      
+
       <article class="card">
         <div class="thumbnail">
           <img class="thumbnail_img" src="./assets/imgs/trainer1.jpg" alt="trainer1">
@@ -234,7 +244,7 @@
               Show More
             </button>
           </div>
-          
+
         </div>
       </article>
 
@@ -580,7 +590,7 @@
       <div class="button_wrapper">
         <button class="enquire_button">Enquire Now</button>
       </div>
-      
+
       <!-- function enquireShowForm(){
 
       } -->
@@ -662,7 +672,7 @@
             <label for="textbox">Add your comments here below:</label>
             <textarea name="textarea" id="textbox" cols="30" rows="10" required placeholder="Please enter reason for contacting us"></textarea>
           </div>
-          
+
 
 
 

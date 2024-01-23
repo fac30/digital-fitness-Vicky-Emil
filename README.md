@@ -21,7 +21,7 @@ To run the project on your local machine:
 
 1. Clone the project:
    ```sh
-   gh repo clone fac30/digital-fitness-vicky-emil
+   git clone https://github.com/fac30/digital-fitness-vicky-emil.git
    ```
 
 2. Navigate to the project directory:
@@ -36,6 +36,4 @@ To run the project on your local machine:
 
 ### Deployment
 
-Experience Digital Fitness instantly through GitHub Pages:
-
-
+Experience Digital Fitness instantly through GitHub Pages:https://fac30.github.io/digital-fitness-vicky-emil/
