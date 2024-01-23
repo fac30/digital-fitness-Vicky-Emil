@@ -396,13 +396,29 @@ uncomment the above and delete
 Team Members
 ------------------------*/
 
+.meet_the_team{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.meet_the_team>h2{
+  color: black;
+  text-align: center;
+}
+
 .teamMembers{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items:auto;
+    justify-content: space-evenly;
     background-color: black;
+    max-height: fit-content;
 }
+
+
 
 .card{
   display: flex;
@@ -416,6 +432,7 @@ Team Members
   overflow: hidden;
   background-color: #fff;
   margin: 40px 20px;
+  max-height: min-content;
 }
 
 .thumbnail{
