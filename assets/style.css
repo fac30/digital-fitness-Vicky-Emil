@@ -22,6 +22,27 @@ body {
   background-color: #fff;
 }
 
+
+/*------------------------
+General
+------------------------*/
+
+.click .show_more{
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 3px 5px #888888;
+}
+
+.click .show_more:hover{
+  background-color: #e4e8e8;
+}
+
+/*---------------------------
+
+----------------------------*/
+
+
 .site-header{
   z-index: 1;
 }
@@ -334,8 +355,41 @@ About
   margin: 1rem;
 }
 
-#reset-button {
+/* #reset-button {
   margin: 2rem;
+} */
+
+
+/*-------------------------------
+Here i made some changes for the
+calculate and reset buttons
+
+if you don't like them, just
+uncomment the above and delete
+ the below code
+------------------------------*/
+
+#reset-button {
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 3px 5px #888888;
+  margin: 2rem;
+}
+
+#reset-button:hover{
+  background-color: #e4e8e8;
+}
+
+#calorie-button{
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 3px 5px #888888;
+}
+
+#calorie-button:hover{
+  background-color: #e4e8e8;
 }
 
 /*------------------------
@@ -467,16 +521,23 @@ font-size: medium;
 
 .button_wrapper{
   display: flex;
- flex-direction: column;
-justify-self: center;
-margin-bottom: 30px;
+ flex-direction: row;
 }
 
 .enquire_button{
   margin: 0 auto;
-  width: 300px;
+  width: 450px;
   border-radius: 6px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 3px 5px #888888;
+  margin-bottom: 20px;
 }
+
+.enquire_button:hover{
+  background-color: #e4e8e8;
+}
+
 
 /*------------------------
 Contact Form
@@ -485,22 +546,34 @@ Contact Form
   padding: 30px 60px;
   display: flex; 
   flex-direction: row;
- justify-items: center;
+  justify-items: center;
   display: none;
   border: 2px solid black;
   border-radius: 6px;
   margin: 0 auto;
 }
 
-.form_location{
+
+.form_body{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+div .textarea{
+display: flex;
+flex-direction: column;
+}
+
+/* .form_location{
   display: flex;
   flex-direction: row;
  
-}
-.finsbury{
+} */
+/* .finsbury{
   display: flex;
   flex-direction: row;
-}
+} */
 
 
 /*------------------------

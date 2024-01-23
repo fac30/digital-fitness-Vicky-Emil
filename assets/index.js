@@ -187,20 +187,20 @@ function showMoreHandler8() {
   }
 }
 
-const ShowMoreBtn9 = document.getElementById("show_more9");
+// const ShowMoreBtn9 = document.getElementById("show_more9");
 
-ShowMoreBtn9.addEventListener("click", showMoreHandler9);
+// ShowMoreBtn9.addEventListener("click", showMoreHandler9);
 
-function showMoreHandler9() {
-  const ToDisappearElement9 = document.getElementById("to_disappear9");
-  if (ShowMoreBtn9.textContent === "Show More") {
-    ToDisappearElement9.style.display = "block";
-    ShowMoreBtn9.textContent = "Show Less";
-  } else {
-    ToDisappearElement9.style.display = "none";
-    ShowMoreBtn9.textContent = "Show More";
-  }
-}
+// function showMoreHandler9() {
+//   const ToDisappearElement9 = document.getElementById("to_disappear9");
+//   if (ShowMoreBtn9.textContent === "Show More") {
+//     ToDisappearElement9.style.display = "block";
+//     ShowMoreBtn9.textContent = "Show Less";
+//   } else {
+//     ToDisappearElement9.style.display = "none";
+//     ShowMoreBtn9.textContent = "Show More";
+//   }
+// }
 
 // ======================Contact Area Functions ============
 
@@ -213,7 +213,7 @@ enquireButton[0].addEventListener("click", enquireShowForm);
 // =============================CONTACT FORM AREA===================================================
 
 function enquireShowForm() {
-  var x = document.getElementById("section_form");
+  var x = document.getElementById("contact-us");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
