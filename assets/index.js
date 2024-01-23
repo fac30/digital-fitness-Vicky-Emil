@@ -48,7 +48,7 @@ document
       const workout = data.exercises[0].name;
       console.log(calories);
       console.log(workout);
-      result.innerHTML = `According to your personal data, engaging in ${workout} for ${duration} minutes is estimated to burn approximately ${calories} calories. <br>Keep up the good work!`;
+      result.innerHTML = `According to your personal data, engaging in ${workout} for ${duration} minutes is estimated to burn approximately ${calories} calories.`;
       imgDisplay.setAttribute("src", "assets/imgs/about5.jpg");
       document.getElementById("results").hidden = false;
       document.getElementById("hidden-container").hidden = true;
