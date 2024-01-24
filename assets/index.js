@@ -1,8 +1,5 @@
-// calories calculator
 
-document
-  .getElementById("caloriesForm")
-  .addEventListener("submit", async function (e) {
+document.getElementById("caloriesForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const exercise = document.getElementById("exercises").value;
@@ -12,12 +9,6 @@ document
     const age = document.getElementById("age").value;
     const result = document.getElementById("caloriesResult");
     const imgDisplay = document.getElementById("exerciseImage");
-
-    console.log(exercise);
-    console.log(duration);
-    console.log(weight);
-    console.log(height);
-    console.log(age);
 
     try {
       const url = "https://trackapi.nutritionix.com/v2/natural/exercise";
@@ -64,6 +55,32 @@ document.getElementById("reset-button").addEventListener("click", () => {
   document.getElementById("results").hidden = true;
   document.getElementById("hidden-container").hidden = false;
 });
+
+
+//=================Navbar===============//
+const body = document.querySelector('body')
+const navbar = document.querySelector('.navbar');
+const menu = document.querySelector('.navlist');
+const menuBtn = document.querySelector('.menu-btn');
+const cancelBtn = document.querySelector('.cancel-btn');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.add('active');
+  menuBtn.classList.add('hide');
+  body.classList.add('disabledScroll');
+})
+
+cancelBtn.addEventListener('click', () => {
+  menu.classList.remove('active');
+  menuBtn.classList.remove('hide');
+  body.classList.remove('disabledScroll')
+})
+
+window.addEventListener('scroll', () => {
+  this.scrollY > 20? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
+})
+
+
 
 //=================TeamMembers functions==========//
 
