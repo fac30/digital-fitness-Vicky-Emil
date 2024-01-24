@@ -14,34 +14,27 @@
   <title>Digital Fitness</title>
   <script src="https://kit.fontawesome.com/47f32613d1.js" crossorigin="anonymous"></script>
   <script src="assets/index.js" defer></script>
+  <!-- <script src="https://kit.fontawesome.com/426c1520f2.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container row justify-space-between">
-      <a class="logo" href="/">
-        <img class="logo" src="assets/imgs/logo1.png" alt="Agency logo image">
-      </a>
-      <!-- Hamburger Icon for Mobile -->
-      <a href="" id="hanburger-btn">
-        <i>≡</i>
-      </a>
-      <nav>
-        <ul class="navlist row">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about-us">About us</a>
-          </li>
-          <li>
-            <a href="#meet-the-team">Team Members</a>
-          </li>
-          <li>
-            <a href="#contact-and-choose">Contact us</a>
-          </li>
+  <header>
+    <nav class="navbar">
+      <div class="header-container">
+        <div class="logo"><a href="#">DigitalFitness</a></div>
+        <div class="icon menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="navlist">
+          <div class="icon cancel-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#meet-the-team">Team Members</a></li>
+          <li><a href="#contact-and-choose">Contact us</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
   <main class="stack-sm">
     <section id="home" class="main-page">
@@ -174,7 +167,9 @@
                 Please ensure you're entering a recognizable physical activity
                 (like 'running', 'swimming', or 'cycling'). Check your spelling and try again.
               </p>
-              <button id="calorie-button" type="submit">Calculate Calories</button>
+              <div class="btn-container">
+                <button id="calorie-button" type="submit">Calculate Calories</button>
+              </div>
             </div>
 
             <div id="results" hidden>
